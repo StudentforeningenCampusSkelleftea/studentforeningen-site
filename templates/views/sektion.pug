@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block intro
+	.container
+		h1 Sektioner
+	
+block content
+	.container
+		if sektioner.length
+			each sektion in sektioner
+				h3= sektion.name
+				h4 Beskrivning
+				p= sektion.description
+				h4 Kontakt
+				p= sektion.contact
+		else
+			h3.text-muted There are no image sektions.
