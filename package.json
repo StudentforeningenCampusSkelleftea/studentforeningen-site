@@ -1,16 +1,22 @@
 {
-  "name": "studentforeningen-site",
-  "version": "0.0.1",
-  "description": "Studentföreningen Campus Skellefteå är en ideell förening som arbetar för att utbildningarna på Campus Skellefteå håller god standard och att studerande får en god studiesocial miljö.",
-  "main": "index.js",
-  "repository": "https://github.com/StudentforeningenCampusSkelleftea/studentforeningen-site.git",
-  "author": "Henrik Melsom",
-  "license": "MIT",
-  "private": false,
-  "engines": {
-    "node": "8.11.0"
-  },
+  "name": "studentfoereningen-campus-skelleftea",
+  "version": "0.0.0",
+  "private": true,
   "dependencies": {
-    "express": "^4.16.3"
+    "keystone": "4.0.0-beta.5",
+    "lodash": "^4.13.1",
+    "pug": "2.0.0-beta11",
+    "dotenv": "4.0.0",
+    "keystone-email": "1.0.5",
+    "async": "2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "3.15.0",
+    "eslint-config-keystone": "3.0.0",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node index.js"
   }
 }
